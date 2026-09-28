@@ -1,0 +1,178 @@
+@"
+# ============================================================
+# FPGA / HDL Project
+# Git Ignore
+# ============================================================
+
+# ------------------------------------------------------------
+# Secrets / Environment files
+# ------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.env
+*.secret
+*.secrets
+*_secret*
+*_token*
+*_credentials*
+*_credential*
+
+# Generated environment/token files
+**/.env_list_file
+
+# ------------------------------------------------------------
+# Questa / ModelSim generated files
+# ------------------------------------------------------------
+**/_viscom/
+**/gate_work/
+**/rtl_work/
+**/work/
+**/library/
+**/libraries/
+
+# Questa generated databases / waveform files
+*.wlf
+*.vstf
+*.wlf.gz
+*.ucdb
+*.qdb
+*.qvh
+*.qws
+
+# Questa / ModelSim logs
+*.log
+transcript
+
+# ModelSim generated files
+modelsim.ini
+modelsim.ini.*
+*.mpf
+*.mti
+
+# ------------------------------------------------------------
+# Vivado generated files
+# ------------------------------------------------------------
+*.jou
+*.str
+*.log
+*.dcp
+*.bit
+*.bin
+*.ltx
+*.xsa
+
+# Vivado generated directories
+.vivado/
+.cache/
+.hw/
+.ip_user_files/
+.sim/
+.xsim/
+.gen/
+.hwdef/
+.srcs/
+.xpr~
+
+# Vivado project generated files
+*.xpr
+*.runs/
+*.gen/
+*.ip_user_files/
+
+# ------------------------------------------------------------
+# Quartus generated files
+# ------------------------------------------------------------
+*.qpf
+*.qsf
+*.qws
+*.smsg
+*.summary
+*.rpt
+*.sta.rpt
+*.fit.rpt
+*.map.rpt
+*.pin
+*.sof
+*.pof
+*.jdi
+*.jic
+
+db/
+incremental_db/
+output_files/
+simulation/modelsim/
+simulation/qsim/
+simulation/questa/
+
+# ------------------------------------------------------------
+# Icarus Verilog
+# ------------------------------------------------------------
+*.vvp
+*.vcd
+*.fst
+
+# ------------------------------------------------------------
+# Verilator
+# ------------------------------------------------------------
+obj_dir/
+*.vlt
+
+# ------------------------------------------------------------
+# Cocotb
+# ------------------------------------------------------------
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+
+# ------------------------------------------------------------
+# FPGA build outputs
+# ------------------------------------------------------------
+build/
+dist/
+out/
+output/
+generated/
+generated_files/
+
+# ------------------------------------------------------------
+# Temporary files
+# ------------------------------------------------------------
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ------------------------------------------------------------
+# VS Code
+# ------------------------------------------------------------
+.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# ------------------------------------------------------------
+# Python
+# ------------------------------------------------------------
+venv/
+.venv/
+env/
+ENV/
+*.egg-info/
+
+# ------------------------------------------------------------
+# Jupyter
+# ------------------------------------------------------------
+.ipynb_checkpoints/
+
+# ------------------------------------------------------------
+# OS files
+# ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+"@ | Set-Content .gitignore

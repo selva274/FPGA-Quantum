@@ -1,0 +1,86 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 win64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do hello_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is Selva@SELVA.
+# vlib gate_work
+# ** Warning: (vlib-34) Library already exists at "gate_work".
+# Errors: 0, Warnings: 1
+# vmap work gate_work
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work gate_work 
+# Copying c:/fpga/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {hello.vo}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 23:27:08 on Sep 27,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." hello.vo 
+# -- Compiling module hello
+# 
+# Top level modules:
+# 	hello
+# End time: 23:27:08 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/FPGA/projects/01_hello {C:/FPGA/projects/01_hello/hello_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 23:27:08 on Sep 27,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/FPGA/projects/01_hello" C:/FPGA/projects/01_hello/hello_tb.v 
+# -- Compiling module hello_tb
+# 
+# Top level modules:
+# 	hello_tb
+# End time: 23:27:08 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L cyclonev_ver -L lpm_ver -L sgate_ver -L cyclonev_hssi_ver -L altera_mf_ver -L cyclonev_pcie_hip_ver -L gate_work -L work -voptargs="+acc"  hello_tb
+# vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L cyclonev_ver -L lpm_ver -L sgate_ver -L cyclonev_hssi_ver -L altera_mf_ver -L cyclonev_pcie_hip_ver -L gate_work -L work -voptargs=""+acc"" hello_tb 
+# Start time: 23:27:09 on Sep 27,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.hello_tb(fast)
+# Loading work.hello(fast)
+# Loading cyclonev_ver.cyclonev_io_obuf(fast)
+# Loading cyclonev_ver.cyclonev_io_ibuf(fast)
+# Loading cyclonev_ver.cyclonev_lcell_comb(fast)
+# Loading cyclonev_ver.cyclonev_lcell_comb(fast__1)
+# Loading cyclonev_ver.cyclonev_lcell_comb(fast__2)
+# Loading cyclonev_ver.cyclonev_lcell_comb(fast__3)
+# Loading cyclonev_ver.cyclonev_lcell_comb(fast__4)
+# Loading cyclonev_ver.cyclonev_lcell_comb(fast__5)
+# Loading cyclonev_ver.cyclonev_lcell_comb(fast__6)
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Selva  Hostname: SELVA  ProcessID: 4680
+#           Attempting to use alternate WLF file "./wlftaih5ba".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftaih5ba
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $finish    : C:/FPGA/projects/01_hello/hello_tb.v(42)
+#    Time: 40 ns  Iteration: 0  Instance: /hello_tb
+# 1
+# Break in Module hello_tb at C:/FPGA/projects/01_hello/hello_tb.v line 42
+# End time: 23:33:07 on Sep 27,2026, Elapsed time: 0:05:58
+# Errors: 0, Warnings: 3
