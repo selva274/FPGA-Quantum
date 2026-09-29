@@ -29,29 +29,29 @@
 # 
 # vlog -vlog01compat -work work +incdir+. {adder.vo}
 # Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
-# Start time: 01:09:49 on Sep 29,2026
+# Start time: 23:51:41 on Sep 29,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+." adder.vo 
 # -- Compiling module adder
 # 
 # Top level modules:
 # 	adder
-# End time: 01:09:49 on Sep 29,2026, Elapsed time: 0:00:00
+# End time: 23:51:41 on Sep 29,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/FPGA/projects/02_adder {C:/FPGA/projects/02_adder/adder_tb.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
-# Start time: 01:09:50 on Sep 29,2026
+# Start time: 23:51:41 on Sep 29,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/FPGA/projects/02_adder" C:/FPGA/projects/02_adder/adder_tb.v 
 # -- Compiling module adder_tb
 # 
 # Top level modules:
 # 	adder_tb
-# End time: 01:09:50 on Sep 29,2026, Elapsed time: 0:00:00
+# End time: 23:51:41 on Sep 29,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L cyclonev_ver -L lpm_ver -L sgate_ver -L cyclonev_hssi_ver -L altera_mf_ver -L cyclonev_pcie_hip_ver -L gate_work -L work -voptargs="+acc"  adder_tb
 # vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L cyclonev_ver -L lpm_ver -L sgate_ver -L cyclonev_hssi_ver -L altera_mf_ver -L cyclonev_pcie_hip_ver -L gate_work -L work -voptargs=""+acc"" adder_tb 
-# Start time: 01:09:50 on Sep 29,2026
+# Start time: 23:51:41 on Sep 29,2026
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
@@ -66,9 +66,9 @@
 # add wave *
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Selva  Hostname: SELVA  ProcessID: 31592
-#           Attempting to use alternate WLF file "./wlft3kdcb6".
+#           Attempting to use alternate WLF file "./wlftn9jj43".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft3kdcb6
+#           Using alternate file: ./wlftn9jj43
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
@@ -78,5 +78,5 @@
 #    Time: 40 ns  Iteration: 0  Instance: /adder_tb
 # 1
 # Break in Module adder_tb at C:/FPGA/projects/02_adder/adder_tb.v line 40
-# End time: 01:10:50 on Sep 29,2026, Elapsed time: 0:01:00
+# End time: 23:52:06 on Sep 29,2026, Elapsed time: 0:00:25
 # Errors: 0, Warnings: 3
